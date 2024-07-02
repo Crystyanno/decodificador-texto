@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/logo-alura.png" type="image/x-icon">
+    <!--FONT DO GOOGLE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <!--FIM FONT DO GOOGLE-->
+    <link rel="stylesheet" href="assets/styles/root.css">
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <title>Challegens | Decodificador</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <img class="logo" src="assets/images/logo-alura.png" alt="">
+            <a href=""></a>
+            <a href=""></a>
+        </div>
+    </header>
+    <main class="container">
+        <form action="" class="form">
+            <textarea class="textarea" placeholder="Digite seu texto..."></textarea>
+            <label for="Apenas letras minusculas e sem acento" class="label"></label>
+            <div class="form__buttons">
+                <button id="btn-encrypt" class="btn btn-primary" type="button">Criptografar</button>
+                <button id="btn-encrypt" class="btn" type="button">Descriptografar</button>
+            </div>
+        </form>
+        <div class="result-container">
+            <div class="no-result">
+                <img class="no-result__image" src="assets/images/no-result.svg" alt="human width blue shirt looking for a diamond!">
+                <h2 class="no-result__title">Nenhuma mensagem encontrada</h2>
+                <p class="no-result__text">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+            <div class="result">
+                <p class="result__text" disabled=""></p>
+                <button class="btn" id="btn-copy">Copiar</button>
+            </div>
+        </div>
+        <div class="copy-success">
+            Texto copiado
+        </div>
+    </main>
+    <footer class="rodape">
+        <p class="footer__text">Alura Challegen - Oracle Next Education</p>
+        <p class="footer__text">Desenvolvido por <a href="" target="_blank"><strong>Crystyanno Souza</strong></a></p>
+    </footer>
+</body>
+
+</html>
