@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400;1,500&display=swap"
         rel="stylesheet">
     <!--FIM FONT DO GOOGLE-->
+    <script src="assets/javaScript/script.js"></script>
     <link rel="stylesheet" href="assets/styles/root.css">
     <link rel="stylesheet" href="assets/styles/main.css">
     <title>Challegens | Decodificador</title>
@@ -27,7 +28,7 @@
     <main class="container">
         <form action="" class="form">
             <textarea class="textarea" placeholder="Digite seu texto..."></textarea>
-            <label for="Apenas letras minusculas e sem acento" class="label"></label>
+            <label class="label">Apenas letras minusculas e sem acentos</label>
             <div class="form__buttons">
                 <button id="btn-encrypt" class="btn btn-primary" type="button">Criptografar</button>
                 <button id="btn-encrypt" class="btn" type="button">Descriptografar</button>
@@ -35,14 +36,15 @@
         </form>
         <div class="result-container">
             <div class="no-result">
-                <img class="no-result__image" src="assets/images/no-result.svg" alt="human width blue shirt looking for a diamond!">
+                <img class="no-result__image" src="assets/images/no-result.svg"
+                    alt="human width blue shirt looking for a diamond!">
                 <h2 class="no-result__title">Nenhuma mensagem encontrada</h2>
                 <p class="no-result__text">Digite um texto que você deseja criptografar ou descriptografar.</p>
             </div>
-            <div class="result">
+            <!--<div class="result">
                 <p class="result__text" disabled=""></p>
                 <button class="btn" id="btn-copy">Copiar</button>
-            </div>
+            </div>-->
         </div>
         <div class="copy-success">
             Texto copiado
@@ -50,7 +52,7 @@
     </main>
     <footer class="rodape">
         <p class="footer__text">Alura Challegen - Oracle Next Education</p>
-        <p class="footer__text">Desenvolvido por <a href="" target="_blank"><strong>Crystyanno Souza</strong></a></p>
+        <p class="footer__text">Desenvolvido por <a href="https://github.com/Crystyanno" target="_blank"><strong>Crystyanno Souza</strong></a></p>
     </footer>
 </body>
 
