@@ -1,7 +1,7 @@
 function updateStatus(found) {
 
     const statusText = document.getElementById('status-text');
-    const copyButton = document.getElementById('copyButton');
+    const copyButton = document.getElementById('btn-copy');
 
     if (found) {
         statusText.textContent = 'Texto encontrado';
