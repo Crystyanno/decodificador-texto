@@ -11,49 +11,52 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400;1,500&display=swap"
         rel="stylesheet">
     <!--FIM FONT DO GOOGLE-->
-    <script src="assets/javaScript/script.js"></script>
-    <link rel="stylesheet" href="assets/styles/root.css">
-    <link rel="stylesheet" href="assets/styles/main.css">
+
+    <!--INICIO DO SCRIPT-->
+    <script src="assets/javaScript/main.js" type="module"></script>
+    <!--FIM DO SCRIPT-->
+
+    <script src="assets/js/app.js"></script>
+    <link rel="stylesheet" href="assets/styles/app.css">
     <title>Challegens | Decodificador</title>
 </head>
 
 <body>
-    <header class="header">
-        <div class="header-container">
-            <img class="logo" src="assets/images/logo-alura.png" alt="">
-            <a href=""></a>
-            <a href=""></a>
-        </div>
+    
     </header>
-    <main class="container">
-        <form action="" class="form">
-            <textarea class="textarea" placeholder="Digite seu texto..."></textarea>
-            <label class="label">Apenas letras minusculas e sem acentos</label>
-            <div class="form__buttons">
-                <button id="btn-encrypt" class="btn btn-primary" type="button">Criptografar</button>
-                <button id="btn-encrypt" class="btn" type="button">Descriptografar</button>
-            </div>
-        </form>
-        <div class="result-container">
-            <div class="no-result">
-                <img class="no-result__image" src="assets/images/no-result.svg"
-                    alt="human width blue shirt looking for a diamond!">
-                <h2 class="no-result__title">Nenhuma mensagem encontrada</h2>
-                <p class="no-result__text">Digite um texto que você deseja criptografar ou descriptografar.</p>
-            </div>
-            <!--<div class="result">
-                <p class="result__text" disabled=""></p>
-                <button class="btn" id="btn-copy">Copiar</button>
-            </div>-->
+    <main class="display-grid">
+        <div class="grid-item-1">
+            <img src="assets/images/logo-alura.png" alt="Logo Alura">
         </div>
-        <div class="copy-success">
-            Texto copiado
+        <div class="grid-item-2">
+            <textarea name="texto" id="inptTextArea" placeholder="Insira o texto aqui"></textarea>
+            <div class="box-exclamation">
+                <svg width="17px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-5a.75.75 0 01.75.75v4.5a.75.75 0 01-1.5 0v-4.5A.75.75 0 0110 5zm0 10a1 1 0 100-2 1 1 0 000 2z"
+                        clip-rule="evenodd" />
+                </svg>
+                <small>Apenas letras minúsculas e sem acentos</small>
+            </div>
+            <div class="box-controls">
+                <button id="btnEncrypted">Encriptar</button>
+                <button id="btnDecrypted">Desencriptar</button>
+            </div>
+        </div>
+        <div class="grid-item-3">
+            <div class="box-result-encriptador">
+                <img class="pre-information" src="assets/images/no-result.svg" alt="empty message">
+                <h2 class="pre-information">Nenhuma mensagem encontrada</h2>
+                <span class="pre-information">Digite o texto que deseja criptografar ou descriptografar.</span>
+                <textarea id="outptTextArea" id="inpt_texto" placeholder="Ingresa el texto aquí"></textarea>
+                <button id="btnCopyResult">Copiar</button>
+            </div>
         </div>
     </main>
     <footer class="rodape">
         <p class="footer__text">Alura Challegen - Oracle Next Education</p>
-        <p class="footer__text">Desenvolvido por <a href="https://github.com/Crystyanno" 
-            target="_blank"><strong>Crystyanno Souza</strong></a></p>
+        <p class="footer__text">Desenvolvido por <a href="https://github.com/Crystyanno"
+                target="_blank"><strong>Crystyanno Souza</strong></a></p>
     </footer>
 </body>
 
