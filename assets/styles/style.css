@@ -16,6 +16,7 @@ h1:hover {
     transition: 0.2s;
     opacity: 50%;
 }
+
 .main {
     display: flex;
     justify-content: space-around;
