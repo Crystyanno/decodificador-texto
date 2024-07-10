@@ -1,59 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Codificador e decodificador de texto. Este site foi um challenge do programa ONE 
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Codificador e decodificador de texto. Este site foi um challenge do programa ONE 
         (Oracle Next Education) desenvolvido para aprimorar os conhecimentos em lógica de programação, HTML, CSS e JavaScript.">
-
-
-        <title>Codificador de texto</title>
-        <link rel="shortcut icon" href="assets/images/logo-alura.png" type="image/x-icon">
-
-
-        <link rel="stylesheet" href="assets/styles/reset.css">
-        <link rel="stylesheet" href="assets/styles/style.css">
-        <link rel="stylesheet" href="assets/js/darkmode.js">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    </head>
-
-    <body>
-        <header>
-            <h1>
-                <a href="index.html" title="Home">
-                    <img src="assets/images/logo-alura.png" alt="Logo da Alura."
-                    width="120" height="48" id="logo">
-                </a>
-               <!--<label>
+    <title>Codificador de texto</title>
+    <link rel="shortcut icon" href="assets/images/logo-alura.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/styles/reset.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/js/darkmode.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="index.html" title="Home">
+                <img src="assets/images/logo-alura.png" alt="Logo da Alura." width="120" height="48" id="logo">
+            </a>
+            <!--<label>
                     <input type="checkbox">
                 </label>-->
-            </h1>    
-        </header>
-        <main class="main">
-            <section>
-                <textarea class="input-texto" cols="40" rows="9" placeholder="Digite seu texto..."></textarea>
+        </h1>
+    </header>
+    <main class="main">
+        <section>
+            <textarea class="input-texto" cols="40" rows="9" placeholder="Digite seu texto..."></textarea>
+            <div class="informacao">
+                <ul class="mensagens-erro"></ul>
+            </div>
+            <div class="botoes">
+                <button type="button" class="btn-codificar">Codificar</button>
+                <button type="button" class="btn-decodificar">Decodificar</button>
+            </div>
+        </section>
+        <section class="container">
+            <textarea class="resultado" cols="20" rows="11" placeholder=" " readonly></textarea>
+            <button type="button" class="invisivel btn-copiar">Copiar</button>
+        </section>
+    </main>
+    <script src="assets/js/criptografia.js"></script>
+    <script src="assets/js/valida.js"></script>
+    <script src="assets/js/copiar.js"></script>
+</body>
 
-                <div class="informacao">
-                    <ul class="mensagens-erro"></ul>
-                </div>
-
-                <div class="botoes">
-                    <button type="button" class="btn-codificar">Codificar</button>
-                    <button type="button" class="btn-decodificar">Decodificar</button>
-                </div>
-            </section>
-
-            <section class="container">
-                <textarea class="resultado" cols="20" rows="11" placeholder=" " readonly></textarea>
-                <button type="button" class="invisivel btn-copiar">Copiar</button>
-            </section>
-        </main>
-
-        <script src="assets/js/criptografia.js"></script>
-        <script src="assets/js/valida.js"></script>
-        <script src="assets/js/copiar.js"></script>
-    </body>
 </html>
